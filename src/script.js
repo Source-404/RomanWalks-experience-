@@ -129,11 +129,11 @@ lightControl.position.y = 0;
 lightControl.position.z = 0;
 scene.add(lightControl);
 
-const pointLight = new THREE.PointLight(0xffffff, 0.1);
+const pointLight = new THREE.PointLight(0xfdfbd3, 0.1);
 pointLight.position.x = -2;
 pointLight.position.y = 10;
 pointLight.position.z = 4;
-pointLight.intensity = 3;
+pointLight.intensity = 2;
 
 lightControl.add(pointLight);
 
@@ -231,7 +231,7 @@ const tick = () => {
   cityPointer.update(elapsedTime);
   parkPointer.update(elapsedTime);
 
-  lightControl.rotation.x = 0.05 * elapsedTime;
+  // lightControl.rotation.x = 0.05 * elapsedTime;
 
   // Update Orbital Controls
   controls.update();
