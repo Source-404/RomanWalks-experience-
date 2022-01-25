@@ -36,8 +36,14 @@ sphere2.add(sphere);
 // Music
 
 function boomMusic() {
-  var audio = new Audio("/music/audio.mp3");
+  var audio = new Audio("./music/audio2.mp3");
   audio.play();
+  // .then(() => {
+  //   console.log("something");
+  // })
+  // .catch((e) => {
+  //   console.log(e);
+  // });
 }
 
 // Location Points
@@ -145,7 +151,7 @@ dracoLoader.setDecoderPath("js/libs/draco/gltf/");
 const loader = new GLTFLoader();
 loader.setDRACOLoader(dracoLoader);
 loader.load(
-  "/models/Rome_city.gltf",
+  "./models/Rome_city.gltf",
   function (gltf) {
     const model = gltf.scene;
     model.position.set(0, 0, 0);
